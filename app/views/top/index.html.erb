@@ -4,5 +4,12 @@
       <h1 class="h4 loginPage_contents_title">新しいマッチを見つけよう</h1>
       <%= link_to "メールアドレスでログインする", new_user_session_path, class: "btn loginPage_contents_btn" %>
     </div>
+     
+        <div class='userAction_logout userAction_common'>
+          <%= link_to(content_tag(:i, "", class: 'fas fa-cog fa-2x'), destroy_user_session_path, method: :delete) %>
+          <span>ログアウト</span>
+        </div>
+      </div>
+    
   </div>
 </div>
