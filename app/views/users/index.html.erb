@@ -67,4 +67,12 @@ var postReaction = function (user_id, reaction) {
   	e.preventDefault();
   	$("#tinderslide").jTinder($(this).attr('class'));
   });
+  function checkUserNum() {
+    // スワイプするユーザー数とスワイプした回数が同じになればaddClassする
+    if (currentUserIndex === usersNum){
+      $(".noUser").addClass("is-active");
+      $("#actionBtnArea").addClass("is-none")
+      return;
+    }
+  }
 </script>
